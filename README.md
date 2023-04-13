@@ -308,15 +308,3 @@ Q: 前端没有打字机效果？
 
 A: 一种可能原因是经过 Nginx 反向代理，开启了 buffer，则 Nginx 会尝试从后端缓冲一定大小的数据再发送给浏览器。请尝试在反代参数后添加 `proxy_buffering off;`，然后重载 Nginx。其他 web server 配置同理。
 
-## 参与贡献
-
-贡献之前请先阅读 [贡献指南](./CONTRIBUTING.md)
-
-感谢所有做过贡献的人!
-
-<a href="https://github.com/Chanzhaoyu/chatgpt-web/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=Chanzhaoyu/chatgpt-web" />
-</a>
-
-## License
-MIT © [ChenZhaoYu](./license)
